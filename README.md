@@ -7,7 +7,9 @@ http://the-internet.herokuapp.com/
 
 
 ### :page_with_curl: Clone :page_with_curl:
-`$ git clone https://github.com/tux7P/WebdriverIO-The-Internet.git`
+```
+$ git clone https://github.com/tux7P/WebdriverIO-The-Internet.git`
+```
 
 
 ### :gear: Install :gear: 
