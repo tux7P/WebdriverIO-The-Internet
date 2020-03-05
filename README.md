@@ -1,5 +1,5 @@
 ### :mega: WebdriverIO-The-Internet :mega:
-This is a webdriverIO project, created to automate The Internet Heroku App. 
+This is a webdriverIO project, created to practice and automate The Internet Heroku App. 
 
 ### :computer: Application URL :computer: 
 ```
