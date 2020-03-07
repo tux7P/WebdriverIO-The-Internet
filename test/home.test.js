@@ -1,4 +1,5 @@
 const assert = require('assert')
+const homePage = require("../pages/home.page")
 
 describe('The Internet Home Page', () => {
     it('Should have the right title', () => {
