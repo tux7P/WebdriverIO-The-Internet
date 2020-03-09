@@ -12,6 +12,8 @@ describe('The Internet Home Page', () => {
         console.log(headingText)
     })
     it('Should have right sub header - h2', () => {
+        let h2Text = $("h2").getText()
+        console.log(h2Text)
         
     })
     it('Should have footer', () => {
