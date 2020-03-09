@@ -1,6 +1,8 @@
 ### :mega: WebdriverIO-The-Internet :mega:
 This is a webdriverIO project, created to practice and automate The Internet Heroku App. 
 
+Webdriverio - Powerful javascript framework with Selenium API implementation for both mobile and web automation 
+
 ### :computer: Application URL :computer: 
 ```
 http://the-internet.herokuapp.com/
