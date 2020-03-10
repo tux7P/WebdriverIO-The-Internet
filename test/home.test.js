@@ -6,6 +6,7 @@ describe('The Internet Home Page', () => {
         browser.url('https://the-internet.herokuapp.com/')
         const title = browser.getTitle()
         assert.strictEqual(title, 'The Internet')
+        homePage.getLiText()
     })
     it('Should have right page header - h1', () => {
         let headingText = $(".heading").getText()
