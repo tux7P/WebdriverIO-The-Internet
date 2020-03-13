@@ -24,6 +24,9 @@ describe('The Internet Home Page', () => {
         let footerXpath = $("//*[@id='page-footer']").getText()
         console.log(footerXpath)
     })
+    it('Is footer displayed', () => {
+        console.log(homePage.pageFooter.isDisplayed())
+    })
     it('Should have github fork ribbon', () => {
 
     })
