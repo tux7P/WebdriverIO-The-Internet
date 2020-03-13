@@ -29,6 +29,9 @@ describe('The Internet Home Page', () => {
     it('Check if footer is displayed', () => {
         console.log(homePage.pageFooter.isDisplayed())
     })
+    it('Check if footer is displayed in viewport', () => {
+        console.log(homePage.pageFooter.isDisplayedInViewport())
+    })
     it('Should have github fork ribbon', () => {
 
     })
