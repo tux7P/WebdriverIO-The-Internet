@@ -12,10 +12,12 @@ describe('The Internet Home Page', () => {
         let headingText = $(".heading").getText()
         console.log(headingText)
     })
+    it('Check if Header exists', () => {
+        console.log(homePage.PageHeader.isExisting())
+    })
     it('Should have right sub header - h2', () => {
         let h2Text = $("h2").getText()
         console.log(h2Text)
-        
     })
     it('Should have footer', () => {
         let footerText = $("#page-footer").getText()
@@ -24,7 +26,7 @@ describe('The Internet Home Page', () => {
         let footerXpath = $("//*[@id='page-footer']").getText()
         console.log(footerXpath)
     })
-    it('Is footer displayed', () => {
+    it('Check if footer is displayed', () => {
         console.log(homePage.pageFooter.isDisplayed())
     })
     it('Should have github fork ribbon', () => {
