@@ -35,4 +35,7 @@ describe('The Internet Home Page', () => {
     it('Should have github fork ribbon', () => {
 
     })
+    it('Click element', () => {
+        homePage.clickOnLink()
+    })
 })

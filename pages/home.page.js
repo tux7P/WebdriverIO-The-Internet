@@ -4,11 +4,21 @@ class Home {
     get pageFooter() { return $('#page-footer')}
     get parent() { return $('ul')}
     get child() { return this.parent.$$('li')}
+    specificChild(index) { return this.parent.$('li:nth-child(${index})')}
+
+    get firstLink() { return $('ul li:nth-child(1) a')}
 
     getLiText() {
         this.child.filter((element) => {
             console.log(element.getText())
         } )
+    }
+
+    clickOnLink() {
+        if(this.firstLink.isDisplayed() === true) {
+            this.firstLink.click()
+        }
+        browser.pause(5000)
     }
 }
 
