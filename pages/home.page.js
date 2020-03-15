@@ -8,6 +8,7 @@ class Home {
 
     get firstLink() { return $('ul li:nth-child(1) a')}
 
+    checkboxes(index) { return $('#checkboxes input:nth-child(${index})')}
     getLiText() {
         this.child.filter((element) => {
             console.log(element.getText())
@@ -20,6 +21,8 @@ class Home {
         }
         browser.pause(5000)
     }
+
+    
 }
 
 module.exports = new Home()
