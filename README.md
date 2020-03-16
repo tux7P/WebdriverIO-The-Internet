@@ -6,7 +6,7 @@ Webdriverio - Powerful javascript framework with Selenium API implementation for
 This project involves following implementation:
 1. Page object model - Done
 2. Reporting with allure report - Done 
-3. CI Integration - [WIP]
+3. Circle CI Integration - [WIP]
 4. Deploying to the cloud - [WIP] 
 
 ### :computer: Application URL :computer: 

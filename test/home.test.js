@@ -32,10 +32,11 @@ describe('The Internet Home Page', () => {
     it('Check if footer is displayed in viewport', () => {
         console.log(homePage.pageFooter.isDisplayedInViewport())
     })
-    it('Should have github fork ribbon', () => {
-
-    })
     it('Click element', () => {
         homePage.clickOnLink()
+    })
+    it('Should click checkbox', () => {
+        homePage.clickCheckbox(1)
+        expect(homePage.checkbox(1).isSelected()).equals(true)
     })
 })

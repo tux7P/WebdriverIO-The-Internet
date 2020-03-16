@@ -8,7 +8,7 @@ class Home {
 
     get firstLink() { return $('ul li:nth-child(1) a')}
 
-    checkboxes(index) { return $('#checkboxes input:nth-child(${index})')}
+    checkbox(index) { return $('#checkboxes input:nth-child(${index})')}
     getLiText() {
         this.child.filter((element) => {
             console.log(element.getText())
@@ -22,6 +22,10 @@ class Home {
         browser.pause(5000)
     }
 
+    clickCheckbox(index) {
+        this.checkboxes(index).waitForDisplayed()
+        this.checkboxes(index).click()
+    }
     
 }
 
