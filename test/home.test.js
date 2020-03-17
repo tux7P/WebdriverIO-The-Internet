@@ -32,10 +32,12 @@ describe('The Internet Home Page', () => {
     it('Check if footer is displayed in viewport', () => {
         console.log(homePage.pageFooter.isDisplayedInViewport())
     })
-    it('Click element', () => {
+    it('Should click element', () => {
         homePage.clickOnLink()
+        expect(homePage.getSpecificElementText(1)).equals('A/B Testing')
     })
     it('Should click checkbox', () => {
+        browser.navigateTo('https://the-internet.herokuapp.com/')
         homePage.clickCheckbox(1)
         expect(homePage.checkbox(1).isSelected()).equals(true)
     })

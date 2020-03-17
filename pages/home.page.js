@@ -5,7 +5,10 @@ class Home {
     get parent() { return $('ul')}
     get child() { return this.parent.$$('li')}
     specificChild(index) { return this.parent.$('li:nth-child(${index})')}
-
+    getSpecificElementText(index) {
+        return this.specificChildElement(index).getText()
+    }
+    
     get firstLink() { return $('ul li:nth-child(1) a')}
 
     checkbox(index) { return $('#checkboxes input:nth-child(${index})')}
