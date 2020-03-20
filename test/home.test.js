@@ -41,4 +41,8 @@ describe('The Internet Home Page', () => {
         homePage.clickCheckbox(1)
         expect(homePage.checkbox(1).isSelected()).equals(true)
     })
+    it('Should switch to iframe', () => {
+        
+    })
+
 })
