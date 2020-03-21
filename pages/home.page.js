@@ -11,6 +11,8 @@ class Home {
     
     get firstLink() { return $('ul li:nth-child(1) a')}
 
+    get iframeBody() { return $('#tinymce')}
+    get iframe() { return $('#mceu_27 #mce_0_ifr')}
     checkbox(index) { return $('#checkboxes input:nth-child(${index})')}
     getLiText() {
         this.child.filter((element) => {

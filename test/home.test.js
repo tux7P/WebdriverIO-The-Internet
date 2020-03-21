@@ -42,7 +42,7 @@ describe('The Internet Home Page', () => {
         expect(homePage.checkbox(1).isSelected()).equals(true)
     })
     it('Should switch to iframe', () => {
-        
+        browser.url(`${browser.options.baseUrl}/iframe`)
     })
 
 })
