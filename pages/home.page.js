@@ -1,6 +1,7 @@
 class Home {
     get PageHeader() { return $('h1.heading') }
     get subHeading() { return $('h2')}
+    get h3Header() { return $('h3') }
     get pageFooter() { return $('#page-footer')}
     get parent() { return $('ul')}
     get child() { return this.parent.$$('li')}
@@ -24,7 +25,7 @@ class Home {
         if(this.firstLink.isDisplayed() === true) {
             this.firstLink.click()
         }
-        browser.pause(5000)
+        this.h3Header.waitForDisplayed()
     }
 
     clickCheckbox(index) {

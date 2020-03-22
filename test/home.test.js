@@ -43,6 +43,7 @@ describe('The Internet Home Page', () => {
     })
     it('Should switch to iframe', () => {
         browser.url(`${browser.options.baseUrl}/iframe`)
+        homePage.h3Header.waitForDisplayed()
     })
 
 })
