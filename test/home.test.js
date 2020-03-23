@@ -45,5 +45,8 @@ describe('The Internet Home Page', () => {
         browser.url(`${browser.options.baseUrl}/iframe`)
         homePage.h3Header.waitForDisplayed()
     })
+    it('Switch to next tab', () => {
+        
+    })
 
 })
