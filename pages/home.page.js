@@ -15,6 +15,11 @@ class Home {
     get iframeBody() { return $('#tinymce')}
     get iframe() { return $('#mceu_27 #mce_0_ifr')}
     checkbox(index) { return $('#checkboxes input:nth-child(${index})')}
+    
+    get dropdownMenu() { return $('#dropdown') }
+    get dropdownMenuOption1() { return $('#dropdown option:nth-child(2)') }
+    get dropdownMenuOption2() { return $('#dropdown option:nth-child(3)') }
+
     getLiText() {
         this.child.filter((element) => {
             console.log(element.getText())
@@ -32,6 +37,22 @@ class Home {
         this.checkboxes(index).waitForDisplayed()
         this.checkboxes(index).click()
     }
+
+    clickDropdownMenu() {
+        this.dropdownMenu.waitForDisplayed()
+        this.dropdownMenu.click()
+    }
+
+    clickDropdownMenuOption1() {
+        this.dropdownMenuOption1.waitForDisplayed()
+        this.dropdownMenuOption1.click()
+    }
+
+    clickDropdownMenuOption2() {
+        this.dropdownMenuOption2.waitForDisplayed()
+        this.dropdownMenuOption2.click()
+    }
+
     
 }
 
