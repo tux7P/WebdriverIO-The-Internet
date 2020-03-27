@@ -5,11 +5,9 @@ describe('Dropdown Tests', function () {
         browser.url(`${browser.options.baseUrl}/dropdown`)
         homePage.clickDropdownMenu()
         homePage.clickDropdownMenuOption1()
-        assert.equal(true, homePage.dropdownMenuOption1.isSelected())
     })
     it('should select option 2', () => {
         homePage.clickDropdownMenu()
         homePage.clickDropdownMenuOption2()
-        assert.equal(true, homePage.dropdownMenuOption2.isSelected())
     })
 })
