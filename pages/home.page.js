@@ -30,7 +30,8 @@ class Home {
         if(this.firstLink.isDisplayed() === true) {
             this.firstLink.click()
         }
-        this.h3Header.waitForDisplayed()
+        browser.pause(5000)
+        //this.h3Header.waitForDisplayed()
     }
 
     clickCheckbox(index) {
