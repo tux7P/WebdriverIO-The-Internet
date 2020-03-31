@@ -6,4 +6,9 @@ describe ('Test element action', function() {
         homePage.clickOnLink()
         expect(browser.getUrl()).equals('https://the-internet.herokuapp.com/abtest')
     })
+    it('Get specific element text', () => {
+        browser.url('/')
+        expect(homePage.getSpecificElementText(1)).equals('A/B Testing')
+    })
+    
 })

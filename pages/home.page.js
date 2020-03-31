@@ -5,11 +5,8 @@ class Home {
     get pageFooter() { return $('#page-footer')}
     get parent() { return $('ul')}
     get child() { return this.parent.$$('li')}
-    specificChild(index) { return this.parent.$('li:nth-child(${index})')}
-    getSpecificElementText(index) {
-        return this.specificChildElement(index).getText()
-    }
-    
+    specificChild(index) { return this.parent.$(`li:nth-child(${index})`)}
+
     get firstLink() { return $('ul li:nth-child(1) a')}
 
     get iframeBody() { return $('#tinymce')}
@@ -19,6 +16,11 @@ class Home {
     get dropdownMenu() { return $('#dropdown') }
     get dropdownMenuOption1() { return $('#dropdown option:nth-child(2)') }
     get dropdownMenuOption2() { return $('#dropdown option:nth-child(3)') }
+
+    getSpecificElementText(index) {
+        this.specificChild(index).waitForDisplayed()
+        return this.specificChild(index).getText()
+    }
 
     getLiText() {
         this.child.filter((element) => {
