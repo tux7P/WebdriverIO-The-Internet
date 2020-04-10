@@ -34,8 +34,8 @@ describe('The Internet Home Page', () => {
     it('Click element', () => {
         homePage.clickOnLink()
         //expect(browser.geturl())
-        //homePage.getSpecificElementText(1)
-        //expect(homePage.getSpecificElementText(1)).equals('A/B Testing')
+        homePage.getSpecificElementText(1)
+        expect(homePage.getSpecificElementText(1)).equals('A/B Testing')
     })
     /* it('Should click checkbox', () => {
         browser.navigateTo('https://the-internet.herokuapp.com/')
